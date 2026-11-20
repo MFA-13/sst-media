@@ -1,0 +1,111 @@
+{
+ "id": "w1_c03_billguess",
+ "caption": "Every solar salesman asks for your electric bill. For a battery, that's not enough. Here's what's missing. Sources on the last slide.\n\nFollow for more plain-English Oʻahu solar math.\n\n#Oahu #HawaiiSolar #SolarPower #HawaiianElectric #Honolulu",
+ "slides": [
+  {
+   "kind": "hook",
+   "theme": "dark",
+   "text": "A battery quote that doesn't ask <span class='accent'>when</span> you use power is a guess."
+  },
+  {
+   "kind": "big",
+   "text": "Your bill shows how much power you use each month.",
+   "sub": "It doesn't show when. And for a battery, when is the whole point."
+  },
+  {
+   "kind": "big",
+   "theme": "dark",
+   "text": "A battery covers your evenings.",
+   "sub": "Size it without knowing your after-5pm use and you're guessing: too small and you still buy at night, too big and you paid for storage you never fill."
+  },
+  {
+   "kind": "chart",
+   "theme": "dark",
+   "text": "Same house. Four setups. <span class='accent'>Where the power goes.</span>",
+   "chart": {
+    "type": "stack",
+    "series": [
+     {
+      "name": "Bought from HECO, ~50¢ per kWh",
+      "color": "#5B6B8C"
+     },
+     {
+      "name": "Solar you use as it's made",
+      "color": "#F2B134"
+     },
+     {
+      "name": "Solar stored in battery, used after dark",
+      "color": "#E07A1F"
+     },
+     {
+      "name": "Solar sent back, 13.5¢ midday",
+      "color": "#F6F1E7"
+     }
+    ],
+    "bars": [
+     {
+      "label": "Too small",
+      "parts": [
+       55,
+       45,
+       0,
+       5
+      ]
+     },
+     {
+      "label": "Right-sized",
+      "parts": [
+       33,
+       67,
+       0,
+       20
+      ]
+     },
+     {
+      "label": "Too big",
+      "parts": [
+       25,
+       75,
+       0,
+       70
+      ]
+     },
+     {
+      "label": "Sized for|a battery|= just right",
+      "color": "#F2B134",
+      "parts": [
+       8,
+       67,
+       25,
+       12
+      ]
+     }
+    ],
+    "note": "Illustrative proportions, not one real house. Battery bar includes some storage losses. Rates: HECO Nov 2026, Rule 32."
+   }
+  },
+  {
+   "kind": "big",
+   "theme": "dark",
+   "text": "Ask every installer: “What evening usage did you size this battery to?”",
+   "sub": "If they only looked at your monthly total, ask how they knew."
+  },
+  {
+   "kind": "cta",
+   "theme": "dark",
+   "bg": "photos/unsplash_benjamin-jopen_2SfssudtyIA.jpg",
+   "text": "Follow for straight answers on Oʻahu solar.",
+   "url": "@solarstraighttalk",
+   "sub": "Free roof-by-roof math tool coming soon."
+  },
+  {
+   "kind": "sources",
+   "items": [
+    "Hawaiian Electric, Smart Renewable Energy Export (Rule 32): Oʻahu midday export credit for agreements signed Apr 2024–Apr 2027.",
+    "Hawaiian Electric effective rate summary, Nov 2026: Oʻahu Schedule R energy charge about 49–52¢/kWh with surcharges, depending on monthly use.",
+    "Photo: Benjamin Jopen on Unsplash."
+   ],
+   "note": "Not affiliated with Hawaiian Electric or any government agency."
+  }
+ ]
+}

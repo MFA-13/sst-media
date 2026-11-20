@@ -1,0 +1,88 @@
+{
+ "id": "w2_j04_fuel",
+ "caption": "Solar Words, Straight #4: Energy Cost Recovery. The line on your Hawaiian Electric bill that's behind most of this year's increase. Sources on the last slide.\n\nFollow for more plain-English Oʻahu solar math.\n\n#Oahu #HawaiiSolar #SolarPower #HawaiianElectric #Honolulu",
+ "slides": [
+  {
+   "kind": "hook",
+   "theme": "dark",
+   "text": "The biggest line on your HECO bill is <span class='accent'>fuel.</span>",
+   "sub": "Solar Words, Straight #4: Energy Cost Recovery"
+  },
+  {
+   "kind": "stat",
+   "stat": "62%",
+   "label": "of a typical Oʻahu bill in November 2026 was the Energy Cost Recovery charge: the fuel and energy HECO buys.",
+   "sub": "$161.64 of a $260.62 bill (500 kWh)."
+  },
+  {
+   "kind": "chart",
+   "theme": "dark",
+   "text": "Same 500 kWh. <span class='accent'>The fuel line did the climbing.</span>",
+   "chart": {
+    "type": "stack",
+    "series": [
+     {
+      "name": "Everything else on the bill",
+      "color": "#5B6B8C"
+     },
+     {
+      "name": "Energy Cost Recovery (fuel + energy)",
+      "color": "#F2B134"
+     }
+    ],
+    "bars": [
+     {
+      "label": "Jan 2026|$194",
+      "parts": [
+       102.05,
+       92.25
+      ]
+     },
+     {
+      "label": "Nov 2026|$261",
+      "color": "#F2B134",
+      "parts": [
+       98.98,
+       161.64
+      ]
+     }
+    ],
+    "note": "Typical 500 kWh Oʻahu residential bill, from Hawaiian Electric's monthly filings."
+   }
+  },
+  {
+   "kind": "big",
+   "text": "Why it changes every month:",
+   "sub": "Oʻahu still makes much of its power from imported oil. HECO passes fuel costs through and resets this charge monthly. It says it makes no profit on fuel."
+  },
+  {
+   "kind": "big",
+   "theme": "dark",
+   "text": "Oil jumped this spring. <span class='accent'>Bills followed about two months later.</span>",
+   "sub": "HECO says there's typically a ~60-day lag between buying fuel and billing for it."
+  },
+  {
+   "kind": "big",
+   "text": "This is why the solar math changed in 2026.",
+   "sub": "Every kWh your panels cover is a kWh you don't pay the fuel charge on."
+  },
+  {
+   "kind": "cta",
+   "theme": "dark",
+   "bg": "photos/unsplash_benjamin-jopen_2SfssudtyIA.jpg",
+   "text": "Follow for straight answers on Oʻahu solar.",
+   "url": "@solarstraighttalk",
+   "sub": "Free roof-by-roof math tool coming soon."
+  },
+  {
+   "kind": "sources",
+   "items": [
+    "Hawaiian Electric, Oʻahu Energy Cost Recovery filings: Jan 2026 (18.449¢/kWh; typical 500 kWh bill $194.30) and Nov 2026 (32.327¢/kWh; $161.64 of a $260.62 typical bill).",
+    "Hawaiian Electric news release, Apr 1, 2026: rising oil prices will raise bills; no profit on fuel.",
+    "Civil Beat, Apr 2026: HECO spokesperson on the ~60-day lag.",
+    "Photo: Benjamin Jopen on Unsplash."
+   ],
+   "note": "Not affiliated with Hawaiian Electric or any government agency."
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "w1_j02_kwkwh",
+ "caption": "Solar Words, Straight #2: kW vs. kWh. One letter apart, and the mix-up behind most confusing solar quotes.\n\nFollow for more plain-English Oʻahu solar math.\n\n#Oahu #HawaiiSolar #SolarPower #HawaiianElectric #Honolulu",
+ "slides": [
+  {
+   "kind": "hook",
+   "theme": "dark",
+   "text": "kW and kWh are <span class='accent'>not the same thing.</span> Your quote uses both.",
+   "sub": "Solar Words, Straight #2"
+  },
+  {
+   "kind": "big",
+   "text": "kW = how big the system is.",
+   "sub": "Like the size of a faucet."
+  },
+  {
+   "kind": "big",
+   "text": "kWh = how much energy it actually makes.",
+   "sub": "Like how much water ends up in the bucket."
+  },
+  {
+   "kind": "stat",
+   "theme": "dark",
+   "stat": "1 × 1",
+   "label": "1 kW running for 1 hour = 1 kWh.",
+   "sub": "Your bill counts kWh. Your quote sells kW."
+  },
+  {
+   "kind": "big",
+   "text": "Ask your installer:",
+   "sub": "“How many kWh a year will this make, and how does that compare to my last 12 bills?”"
+  },
+  {
+   "kind": "cta",
+   "theme": "dark",
+   "bg": "photos/unsplash_benjamin-jopen_2SfssudtyIA.jpg",
+   "text": "Follow for straight answers on Oʻahu solar.",
+   "url": "@solarstraighttalk",
+   "sub": "Free roof-by-roof math tool coming soon."
+  },
+  {
+   "kind": "sources",
+   "items": [
+    "Definition: kilowatt (kW) is a rate of power; kilowatt-hour (kWh) is energy, 1 kW sustained for 1 hour (U.S. EIA, “Electricity explained”).",
+    "Photo: Benjamin Jopen on Unsplash."
+   ],
+   "note": "Not affiliated with Hawaiian Electric or any government agency."
+  }
+ ]
+}

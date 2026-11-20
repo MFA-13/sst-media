@@ -1,0 +1,257 @@
+{
+ "id": "w1_c04_battery",
+ "caption": "Almost every new solar system on Oʻahu comes with a battery now. Here's how to tell if yours needs one. Sources on the last slide.\n\nFollow for more plain-English Oʻahu solar math.\n\n#Oahu #HawaiiSolar #SolarPower #HawaiianElectric #Honolulu",
+ "slides": [
+  {
+   "kind": "hook",
+   "theme": "dark",
+   "text": "Almost every new Oʻahu solar system comes with a battery. <span class='accent'>Yours might not need one.</span>"
+  },
+  {
+   "kind": "stat",
+   "stat": "92%",
+   "label": "of Oʻahu residential solar permits in 2025 included battery storage."
+  },
+  {
+   "kind": "chart",
+   "theme": "dark",
+   "text": "Charge on cheap midday sun. <span class='accent'>Use it when power costs the most.</span>",
+   "chart": {
+    "band_font": 30,
+    "bands": [
+     [
+      9,
+      17,
+      "Sell: 13.5¢",
+      "#F6F1E7"
+     ],
+     [
+      17,
+      21,
+      "Buy: ~50¢",
+      "#F2B134"
+     ]
+    ],
+    "areas": [
+     {
+      "range": [
+       10,
+       14
+      ],
+      "top": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0.03,
+       0.15,
+       0.38,
+       0.62,
+       0.82,
+       0.95,
+       1,
+       0.95,
+       0.82,
+       0.62,
+       0.38,
+       0.15,
+       0.03,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bottom": [
+       0.3,
+       0.26,
+       0.24,
+       0.23,
+       0.24,
+       0.3,
+       0.42,
+       0.48,
+       0.4,
+       0.34,
+       0.32,
+       0.33,
+       0.35,
+       0.36,
+       0.4,
+       0.48,
+       0.62,
+       0.8,
+       0.92,
+       0.95,
+       0.86,
+       0.66,
+       0.48,
+       0.36
+      ],
+      "color": "#E07A1F"
+     },
+     {
+      "range": [
+       17,
+       20
+      ],
+      "top": [
+       0.3,
+       0.26,
+       0.24,
+       0.23,
+       0.24,
+       0.3,
+       0.42,
+       0.48,
+       0.4,
+       0.34,
+       0.32,
+       0.33,
+       0.35,
+       0.36,
+       0.4,
+       0.48,
+       0.6,
+       0.6,
+       0.6,
+       0.6,
+       0.6,
+       0.6,
+       0.48,
+       0.36
+      ],
+      "bottom": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "color": "#E07A1F"
+     }
+    ],
+    "lines": [
+     {
+      "name": "Solar output",
+      "color": "#F2B134",
+      "pts": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0.03,
+       0.15,
+       0.38,
+       0.62,
+       0.82,
+       0.95,
+       1,
+       0.95,
+       0.82,
+       0.62,
+       0.38,
+       0.15,
+       0.03,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "name": "Home use",
+      "color": "#F6F1E7",
+      "pts": [
+       0.3,
+       0.26,
+       0.24,
+       0.23,
+       0.24,
+       0.3,
+       0.42,
+       0.48,
+       0.4,
+       0.34,
+       0.32,
+       0.33,
+       0.35,
+       0.36,
+       0.4,
+       0.48,
+       0.62,
+       0.8,
+       0.92,
+       0.95,
+       0.86,
+       0.66,
+       0.48,
+       0.36
+      ]
+     }
+    ],
+    "legend_extra": [
+     {
+      "name": "Battery",
+      "color": "#E07A1F"
+     }
+    ],
+    "note": "Illustrative shapes, not one real house. Rates: Rule 32 export credit; HECO Schedule R, Nov 2026."
+   }
+  },
+  {
+   "kind": "stat",
+   "theme": "dark",
+   "stat": "$400",
+   "label": "per kW: Hawaiian Electric's upfront payment for enrolling a new battery in its BYOD Plus program.",
+   "sub": "5-year commitment. Terms apply."
+  },
+  {
+   "kind": "big",
+   "text": "Leans yes: big evening use, outage backup matters to you.",
+   "sub": "Leans no: most of your use is midday, or evenings are light. The math decides, not the pitch."
+  },
+  {
+   "kind": "cta",
+   "theme": "dark",
+   "bg": "photos/unsplash_benjamin-jopen_2SfssudtyIA.jpg",
+   "text": "Follow for straight answers on Oʻahu solar.",
+   "url": "@solarstraighttalk",
+   "sub": "Free roof-by-roof math tool coming soon."
+  },
+  {
+   "kind": "sources",
+   "items": [
+    "Hawaiian Electric effective rate summary, Nov 2026: Oʻahu Schedule R energy charge about 49–52¢/kWh with surcharges. Rule 32: 13.5¢/kWh midday export credit.",
+    "Hawaii DBEDT, Solar PV and Battery Installation (2025 update), Apr 2026: 92.4% of Oʻahu residential PV permits in 2025 included storage.",
+    "Hawaiian Electric, Bring Your Own Device Plus (Rule 33): $400/kW committed, upfront.",
+    "Photo: Benjamin Jopen on Unsplash."
+   ],
+   "note": "Not affiliated with Hawaiian Electric or any government agency."
+  }
+ ]
+}

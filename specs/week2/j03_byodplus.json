@@ -1,0 +1,57 @@
+{
+ "id": "w2_j03_byodplus",
+ "caption": "Solar Words, Straight #3: BYOD Plus. Hawaiian Electric pays you upfront to enroll your battery. Here's what you're agreeing to. Sources on the last slide.\n\nFollow for more plain-English Oʻahu solar math.\n\n#Oahu #HawaiiSolar #SolarPower #HawaiianElectric #Honolulu",
+ "slides": [
+  {
+   "kind": "hook",
+   "theme": "dark",
+   "text": "HECO will pay you $400 per kW for your battery. <span class='accent'>Here's the trade.</span>",
+   "sub": "Solar Words, Straight #3: BYOD Plus"
+  },
+  {
+   "kind": "stat",
+   "stat": "$400",
+   "label": "per kW you commit, paid once, upfront. Income-qualified homes get another $400 per kW.",
+   "sub": "Commit 5 kW = $2,000."
+  },
+  {
+   "kind": "stat",
+   "theme": "dark",
+   "stat": "~$52",
+   "label": "a month in HECO's own example: a credit for the energy your battery sends to the grid.",
+   "sub": "Varies by rate. Older NEM customers don't get it."
+  },
+  {
+   "kind": "big",
+   "text": "The trade: your battery works for the grid <span class='accent'>2 hours a day, every day.</span>",
+   "sub": "You pick the window. It powers your home first, then sends the rest out."
+  },
+  {
+   "kind": "big",
+   "theme": "dark",
+   "text": "Leave early? You pay back part of the upfront money.",
+   "sub": "60 days' notice, prorated. Check your term: HECO's page lists 5 years in one place and 10 in another."
+  },
+  {
+   "kind": "big",
+   "text": "Ask your installer:",
+   "sub": "“How many kW should I commit, and how much battery is left for my evenings and outages?”"
+  },
+  {
+   "kind": "cta",
+   "theme": "dark",
+   "bg": "photos/unsplash_benjamin-jopen_2SfssudtyIA.jpg",
+   "text": "Follow for straight answers on Oʻahu solar.",
+   "url": "@solarstraighttalk",
+   "sub": "Free roof-by-roof math tool coming soon."
+  },
+  {
+   "kind": "sources",
+   "items": [
+    "Hawaiian Electric, Bring Your Own Device Plus program page (hawaiianelectric.com), viewed Nov 19, 2026: $400/kW upfront, $400/kW LMI adder, one 2-hour daily window, 60-day notice and prorated repayment, example monthly credit ~$52.",
+    "Photo: Benjamin Jopen on Unsplash."
+   ],
+   "note": "Not affiliated with Hawaiian Electric or any government agency."
+  }
+ ]
+}

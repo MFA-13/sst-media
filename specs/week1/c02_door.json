@@ -1,0 +1,50 @@
+{
+ "id": "w1_c02_door",
+ "caption": "Someone knocked about solar? Here's what to know before you sign anything. Sources on the last slide.\n\nFollow for more plain-English Oʻahu solar math.\n\n#Oahu #HawaiiSolar #SolarPower #HawaiianElectric #Honolulu",
+ "slides": [
+  {
+   "kind": "hook",
+   "theme": "dark",
+   "text": "The solar salesman at your door wants a signature <span class='accent'>today.</span>",
+   "sub": "You don't owe him one."
+  },
+  {
+   "kind": "big",
+   "text": "Hawaii's consumer protection office has warned about misleading door-to-door solar sales.",
+   "sub": "Most recently in August 2026."
+  },
+  {
+   "kind": "big",
+   "text": "Red flags it named:",
+   "sub": "“Free” solar. A “state program.” Claims the seller works with the State."
+  },
+  {
+   "kind": "big",
+   "theme": "dark",
+   "text": "Already signed?</div><div class='big accent' style='margin-top:36px'>You have 3 business days to cancel.",
+   "sub": "Use them to make sure your contract is clean."
+  },
+  {
+   "kind": "big",
+   "text": "Before you sign anything, see your own numbers.",
+   "sub": "Your roof. Your bill. Nobody in your living room pressuring you for a signed contract."
+  },
+  {
+   "kind": "cta",
+   "theme": "dark",
+   "text": "Follow for straight answers on Oʻahu solar.",
+   "url": "@solarstraighttalk",
+   "sub": "Free roof-by-roof math tool coming soon.",
+   "bg": "photos/unsplash_benjamin-jopen_2SfssudtyIA.jpg"
+  },
+  {
+   "kind": "sources",
+   "items": [
+    "Hawaii DCCA press release, “State Warns Public About Misleading Door-to-Door Solar Sales,” Aug 26, 2026 (cca.hawaii.gov).",
+    "3-business-day cancellation right for door-to-door sales: same release.",
+    "Photo: Benjamin Jopen on Unsplash."
+   ],
+   "note": "Not affiliated with the State of Hawaii, Hawaiian Electric or any agency."
+  }
+ ]
+}

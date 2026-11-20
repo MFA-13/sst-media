@@ -1,0 +1,49 @@
+{
+ "id": "w1_j01_trueup",
+ "caption": "Solar Words, Straight #1: true-up. The word installers say fast, and why it matters for the credits you earn. Sources on the last slide.\n\nFollow for more plain-English Oʻahu solar math.\n\n#Oahu #HawaiiSolar #SolarPower #HawaiianElectric #Honolulu",
+ "slides": [
+  {
+   "kind": "hook",
+   "theme": "dark",
+   "text": "Your installer said <span class='accent'>“true-up.”</span> Here's what it can cost you.",
+   "sub": "Solar Words, Straight #1"
+  },
+  {
+   "kind": "big",
+   "text": "True-up = the yearly reset on your solar credits.",
+   "sub": "Once a year, your account gets squared up."
+  },
+  {
+   "kind": "big",
+   "text": "All year, extra solar earns credits on your bill.",
+   "sub": "Credits you don't use roll forward to next month."
+  },
+  {
+   "kind": "big",
+   "theme": "dark",
+   "text": "At the true-up, credits you <span class='accent'>never used expire.</span>",
+   "sub": "You don't get paid out for them."
+  },
+  {
+   "kind": "big",
+   "text": "Ask your installer:",
+   "sub": "“How many credits will I bank a year, and how many will expire at true-up?”"
+  },
+  {
+   "kind": "cta",
+   "theme": "dark",
+   "bg": "photos/unsplash_benjamin-jopen_2SfssudtyIA.jpg",
+   "text": "Follow for straight answers on Oʻahu solar.",
+   "url": "@solarstraighttalk",
+   "sub": "Free roof-by-roof math tool coming soon."
+  },
+  {
+   "kind": "sources",
+   "items": [
+    "Hawaiian Electric Rule 32 (Smart Renewable Energy Export): credits roll forward month to month; unused credits expire after 12 months.",
+    "Photo: Benjamin Jopen on Unsplash."
+   ],
+   "note": "Not affiliated with Hawaiian Electric or any government agency."
+  }
+ ]
+}

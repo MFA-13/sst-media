@@ -1,0 +1,103 @@
+{
+ "timezone": "Pacific/Honolulu",
+ "buffer": {
+  "organization_id": "6afffbc0ec5a90c1758c0221",
+  "channels": {
+   "instagram": "6afffda3ece6dfde5f2e460d",
+   "facebook": "6afffcddece6dfde5f2e4170"
+  }
+ },
+ "image_url_base": "https://raw.githubusercontent.com/MFA-13/sst-media/main/",
+ "posts": [
+  {
+   "id": "w1_c01_5to9",
+   "spec": "specs/week1/c01_5to9.json",
+   "date": "2026-11-21",
+   "time": "11:30",
+   "status": "draft",
+   "approved_by": null,
+   "hold": null,
+   "buffer_post_ids": {}
+  },
+  {
+   "id": "w1_c02_door",
+   "spec": "specs/week1/c02_door.json",
+   "date": "2026-11-22",
+   "time": "18:30",
+   "status": "draft",
+   "approved_by": null,
+   "hold": "Waiting on hook photo from Instinct (optional; Mason wants it).",
+   "buffer_post_ids": {}
+  },
+  {
+   "id": "w1_c05_minbill",
+   "spec": "specs/week1/c05_minbill.json",
+   "date": "2026-11-23",
+   "time": "11:30",
+   "status": "draft",
+   "approved_by": null,
+   "hold": "Waiting on Instinct fact check (Rule 32: 'yearly true-up' line).",
+   "buffer_post_ids": {}
+  },
+  {
+   "id": "w1_c04_battery",
+   "spec": "specs/week1/c04_battery.json",
+   "date": "2026-11-24",
+   "time": "18:30",
+   "status": "draft",
+   "approved_by": null,
+   "hold": "Waiting on Instinct fact check (~50c rate; BYOD Plus 5 vs 10 years).",
+   "buffer_post_ids": {}
+  },
+  {
+   "id": "w1_j01_trueup",
+   "spec": "specs/week1/j01_trueup.json",
+   "date": "2026-11-25",
+   "time": "11:30",
+   "status": "draft",
+   "approved_by": null,
+   "hold": "Waiting on Instinct fact check (Rule 32 true-up mechanics).",
+   "buffer_post_ids": {}
+  },
+  {
+   "id": "w1_j02_kwkwh",
+   "spec": "specs/week1/j02_kwkwh.json",
+   "date": "2026-11-26",
+   "time": "18:30",
+   "status": "draft",
+   "approved_by": null,
+   "hold": null,
+   "buffer_post_ids": {}
+  },
+  {
+   "id": "w1_c03_billguess",
+   "spec": "specs/week1/c03_billguess.json",
+   "date": "2026-11-27",
+   "time": "11:30",
+   "status": "draft",
+   "approved_by": null,
+   "hold": "Waiting on Instinct fact check (~50c/kWh rate).",
+   "buffer_post_ids": {}
+  },
+  {
+   "id": "w2_j03_byodplus",
+   "spec": "specs/week2/j03_byodplus.json",
+   "date": null,
+   "time": null,
+   "status": "draft",
+   "approved_by": null,
+   "hold": "Waiting on Instinct fact check (term length, leased batteries).",
+   "buffer_post_ids": {}
+  },
+  {
+   "id": "w2_j04_fuel",
+   "spec": "specs/week2/j04_fuel.json",
+   "date": null,
+   "time": null,
+   "status": "draft",
+   "approved_by": null,
+   "hold": null,
+   "buffer_post_ids": {}
+  }
+ ]
+}

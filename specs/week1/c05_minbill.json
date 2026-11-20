@@ -1,0 +1,73 @@
+{
+ "id": "w1_c05_minbill",
+ "caption": "Solar can cut your Hawaiian Electric bill a lot. It can't take it to zero. Here's why. Sources on the last slide.\n\nFollow for more plain-English Oʻahu solar math.\n\n#Oahu #HawaiiSolar #SolarPower #HawaiianElectric #Honolulu",
+ "slides": [
+  {
+   "kind": "hook",
+   "theme": "dark",
+   "text": "Solar won't zero out your HECO bill. <span class='accent'>Here's what's left.</span>"
+  },
+  {
+   "kind": "stat",
+   "stat": "~$30",
+   "label": "a month: the minimum on Hawaiian Electric's standard Oʻahu residential rate, even if you use zero power.",
+   "sub": "$25 base, $30.22 with surcharges (Nov 2026)."
+  },
+  {
+   "kind": "chart",
+   "theme": "dark",
+   "text": "Add panels, the bill drops. <span class='accent'>Then it hits a floor.</span>",
+   "chart": {
+    "type": "floor",
+    "pts": [
+     1,
+     0.84,
+     0.69,
+     0.55,
+     0.42,
+     0.31,
+     0.22,
+     0.17,
+     0.17,
+     0.17,
+     0.17,
+     0.17
+    ],
+    "floor": 0.17,
+    "floor_label": "~$30 minimum",
+    "xlab": [
+     "No solar",
+     "Bigger system →"
+    ],
+    "ylab": "Monthly bill",
+    "note": "Illustrative shape. Floor: Schedule R 1-phase minimum, $30.22 effective (Nov 2026)."
+   }
+  },
+  {
+   "kind": "big",
+   "text": "And credits you don't use expire at your yearly true-up."
+  },
+  {
+   "kind": "big",
+   "theme": "dark",
+   "text": "So sizing a system to hit $0 usually means paying for panels you never get credit for."
+  },
+  {
+   "kind": "cta",
+   "theme": "dark",
+   "bg": "photos/unsplash_benjamin-jopen_2SfssudtyIA.jpg",
+   "text": "Follow for straight answers on Oʻahu solar.",
+   "url": "@solarstraighttalk",
+   "sub": "Free roof-by-roof math tool coming soon."
+  },
+  {
+   "kind": "sources",
+   "items": [
+    "Hawaiian Electric effective rate summary, Nov 2026: Schedule R 1-phase minimum charge $25.00 base, $30.22 effective.",
+    "Hawaiian Electric Rule 32 (Smart Renewable Energy Export): credits reduce the bill only to the minimum charge; banked credits expire after 12 months.",
+    "Photo: Benjamin Jopen on Unsplash."
+   ],
+   "note": "Not affiliated with Hawaiian Electric or any government agency."
+  }
+ ]
+}
