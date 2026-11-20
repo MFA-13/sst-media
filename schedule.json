@@ -17,7 +17,8 @@
    "status": "draft",
    "approved_by": null,
    "hold": null,
-   "buffer_post_ids": {}
+   "buffer_post_ids": {},
+   "approval_request_row": null
   },
   {
    "id": "w1_c02_door",
@@ -27,7 +28,8 @@
    "status": "draft",
    "approved_by": null,
    "hold": "Waiting on hook photo from Instinct (optional; Mason wants it).",
-   "buffer_post_ids": {}
+   "buffer_post_ids": {},
+   "approval_request_row": null
   },
   {
    "id": "w1_c05_minbill",
@@ -37,7 +39,8 @@
    "status": "draft",
    "approved_by": null,
    "hold": "Waiting on Instinct fact check (Rule 32: 'yearly true-up' line).",
-   "buffer_post_ids": {}
+   "buffer_post_ids": {},
+   "approval_request_row": null
   },
   {
    "id": "w1_c04_battery",
@@ -47,7 +50,8 @@
    "status": "draft",
    "approved_by": null,
    "hold": "Waiting on Instinct fact check (~50c rate; BYOD Plus 5 vs 10 years).",
-   "buffer_post_ids": {}
+   "buffer_post_ids": {},
+   "approval_request_row": null
   },
   {
    "id": "w1_j01_trueup",
@@ -57,7 +61,8 @@
    "status": "draft",
    "approved_by": null,
    "hold": "Waiting on Instinct fact check (Rule 32 true-up mechanics).",
-   "buffer_post_ids": {}
+   "buffer_post_ids": {},
+   "approval_request_row": null
   },
   {
    "id": "w1_j02_kwkwh",
@@ -67,7 +72,8 @@
    "status": "draft",
    "approved_by": null,
    "hold": null,
-   "buffer_post_ids": {}
+   "buffer_post_ids": {},
+   "approval_request_row": null
   },
   {
    "id": "w1_c03_billguess",
@@ -77,7 +83,8 @@
    "status": "draft",
    "approved_by": null,
    "hold": "Waiting on Instinct fact check (~50c/kWh rate).",
-   "buffer_post_ids": {}
+   "buffer_post_ids": {},
+   "approval_request_row": null
   },
   {
    "id": "w2_j03_byodplus",
@@ -87,7 +94,8 @@
    "status": "draft",
    "approved_by": null,
    "hold": "Waiting on Instinct fact check (term length, leased batteries).",
-   "buffer_post_ids": {}
+   "buffer_post_ids": {},
+   "approval_request_row": null
   },
   {
    "id": "w2_j04_fuel",
@@ -97,7 +105,8 @@
    "status": "draft",
    "approved_by": null,
    "hold": null,
-   "buffer_post_ids": {}
+   "buffer_post_ids": {},
+   "approval_request_row": null
   }
  ]
 }

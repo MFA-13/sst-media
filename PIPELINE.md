@@ -8,6 +8,9 @@ Owned by the marketing chat (Mason, Nov 19 2026). Runs 3x/day as a scheduled tas
 - `rendered/<post id>/` the PNGs actually posted. Buffer pulls them from `image_url_base` + path.
 - `schedule.json` every post: date, time (HST), status, approval, hold, Buffer post ids.
 
+## Approvals
+Approval requests go to Mason through Instinct (a TASKS row with the slide images; Instinct texts him the images). Mason answers to Instinct or in the marketing chat; the chat writes his approval here directly.
+
 ## Status flow
 `draft` -> `approved` (only with Mason's quoted words + date in `approved_by`) -> `queued` (in Buffer, ids recorded) -> `posted`.
 A post with a non-empty `hold` is never queued, even if approved.
