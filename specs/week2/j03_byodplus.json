@@ -30,7 +30,7 @@
    "kind": "big",
    "theme": "dark",
    "text": "Leave early? You pay back part of the upfront money.",
-   "sub": "60 days' notice, prorated. Check your term: HECO's page lists 5 years in one place and 10 in another."
+   "sub": "60 days' notice, prorated. The commitment is 5 years (Rule 33)."
   },
   {
    "kind": "big",
@@ -49,6 +49,7 @@
    "kind": "sources",
    "items": [
     "Hawaiian Electric, Bring Your Own Device Plus program page (hawaiianelectric.com), viewed Nov 19, 2026: $400/kW upfront, $400/kW LMI adder, one 2-hour daily window, 60-day notice and prorated repayment, example monthly credit ~$52.",
+    "Hawaiian Electric Rule 33, Section G: five-year commitment to the BYOD Plus program.",
     "Photo: Benjamin Jopen on Unsplash."
    ],
    "note": "Not affiliated with Hawaiian Electric or any government agency."
