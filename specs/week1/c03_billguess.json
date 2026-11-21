@@ -14,7 +14,7 @@
   {
    "kind": "big",
    "theme": "dark",
-   "text": "A battery covers your evenings. Guess that wrong:</div><div class='big' style='font-size:56px;margin-top:48px'>Too small: <span class='accent'>you still buy from HECO at night.</span></div><div class='big' style='font-size:56px;margin-top:36px'>Too big: <span class='accent'>you paid for storage you never fill.</span>"
+   "text": "If they guess wrong:</div><div class='big' style='font-size:56px;margin-top:48px'>Too small: <span class='accent'>you still buy from HECO at night.</span></div><div class='big' style='font-size:56px;margin-top:36px'>Too big: <span class='accent'>you paid for storage you never fill.</span>"
   },
   {
    "kind": "chart",
