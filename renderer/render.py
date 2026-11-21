@@ -130,10 +130,20 @@ def flow_chart_svg(c):
     cap, pmax, eff = b["cap"], b["pmax"], b["eff"]
     dt = 0.25
     soc = 0.0
+    win = c.get("window")
+    commit = c.get("commit", 0)
     for _ in range(3):  # settle to a steady daily cycle
-        direct, dis, imp, chg, exp_ = [], [], [], [], []
-        for sv, hv in zip(sol, home):
+        direct, dis, imp, chg, exp_, b2g = [], [], [], [], [], []
+        for h, sv, hv in zip(hrs, sol, home):
             d = min(sv, hv)
+            if win and win[0] <= h < win[1] and sv < hv:
+                out_ = min(commit, soc / dt)
+                soc -= out_ * dt
+                need = hv - sv
+                to_home = min(out_, need)
+                direct.append(d); dis.append(to_home); imp.append(need - to_home); chg.append(0); exp_.append(0); b2g.append(out_ - to_home)
+                continue
+            b2g.append(0)
             if sv > hv:
                 room = (cap - soc) / eff / dt
                 ch = min(sv - hv, pmax, room)
@@ -146,7 +156,7 @@ def flow_chart_svg(c):
                 direct.append(d); dis.append(ds); imp.append(need - ds); chg.append(0); exp_.append(0)
     W, H, L, R, T, B = 896, 600, 20, 20, 70, 70
     pw, ph = W - L - R, H - T - B
-    top = max(max(sol), max(home)) * 1.05
+    top = max(max(sol), max(home), max(h_ + g_ for h_, g_ in zip(home, b2g)) if win else 0) * 1.05
     x = lambda h: L + pw * h / 24
     y = lambda v: T + ph * (1 - v / top)
     def band(lo, hi, color, op=1.0):
@@ -158,6 +168,7 @@ def flow_chart_svg(c):
     l3 = [a + b_ for a, b_ in zip(l2, imp)]          # = home use
     l4 = [a + b_ for a, b_ in zip(l3, chg)]
     l5 = [a + b_ for a, b_ in zip(l4, exp_)]
+    l6 = [a + b_ for a, b_ in zip(l5, b2g)]
     S = c["colors"]
     out = [f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" style="font-family:Inter,sans-serif">']
     for a, b_, lab, col in c.get("bands", []):
@@ -169,6 +180,8 @@ def flow_chart_svg(c):
     out.append('<defs><pattern id="chg" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="16" height="16" fill="#14213D"></rect><rect width="8" height="16" fill="' + S["battery"] + '"></rect></pattern></defs>')
     out.append(band(l3, l4, "url(#chg)"))
     out.append(band(l4, l5, S["export"], 0.16))
+    if win:
+        out.append(band(l5, l6, S["battery"], 0.6))
     sd = " ".join(f'{"M" if i == 0 else "L"}{x(h):.1f},{y(v):.1f}' for i, (h, v) in enumerate(zip(hrs, l5)))
     out.append(f'<path d="{sd}" fill="none" stroke="{S["direct"]}" stroke-width="3" stroke-dasharray="10 8"></path>')
     hd = " ".join(f'{"M" if i == 0 else "L"}{x(h):.1f},{y(v):.1f}' for i, (h, v) in enumerate(zip(hrs, home)))
@@ -179,7 +192,9 @@ def flow_chart_svg(c):
         out.append(f'<text x="{x(h)}" y="{T+ph+44}" fill="#F6F1E7" fill-opacity="0.75" font-size="26" font-weight="600" text-anchor="{anchor}">{lab}</text>')
     out.append('</svg>')
     items = [("Solar used directly", S["direct"], 1), ("Battery powering home", S["battery"], 1), ("Bought from HECO", S["grid"], 1),
-             ("Charging the battery", "repeating-linear-gradient(45deg," + S["battery"] + " 0 6px,#14213D 6px 12px)", 1), ("Sent to grid", S["export"], 0.16)]
+             ("Charging the battery", "repeating-linear-gradient(45deg," + S["battery"] + " 0 6px,#14213D 6px 12px)", 1), ("Solar sent to grid", S["export"], 0.16)]
+    if win:
+        items.append(("Battery sent to grid", S["battery"], 0.6))
     legend = "".join(f'<div style="display:flex;align-items:center;gap:12px"><span style="width:28px;height:28px;border-radius:4px;background:{col};opacity:{op}"></span>{n}</div>' for n, col, op in items)
     legend += '<div style="display:flex;align-items:center;gap:12px"><span style="width:28px;height:5px;background:#F6F1E7"></span>Home use</div>'
     return "".join(out) + f'<div style="font-size:26px;font-weight:600;margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:10px 24px">{legend}</div>' + (f'<div style="font-size:22px;opacity:0.7;margin-top:14px">{c["note"]}</div>' if c.get("note") else "")

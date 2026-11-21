@@ -50,9 +50,42 @@
   {
    "kind": "stat",
    "theme": "dark",
+   "pre": "HECO will also pay you to share your battery.",
    "stat": "$2,000",
-   "label": "upfront from HECO for committing 5 kW of your battery to BYOD Plus.",
-   "sub": "<span class='accent'>Plus a monthly credit</span> (~$52 in HECO's example). The catch: 2 hours a day to the grid, for 5 years."
+   "label": "upfront for committing 5 kW to its BYOD Plus program, <span class='accent'>plus a monthly credit</span> (~$52 in HECO's example)."
+  },
+  {
+   "kind": "chart",
+   "text": "The catch: <span class='accent'>2 hours a day, the grid gets first dibs.</span>",
+   "chart": {
+    "type": "flow",
+    "solar_scale": 1.25,
+    "battery": {
+     "cap": 2.0,
+     "pmax": 0.5,
+     "eff": 0.9
+    },
+    "window": [
+     18,
+     20
+    ],
+    "commit": 0.9,
+    "bands": [
+     [
+      18,
+      20,
+      "Your BYOD window",
+      "#F2B134"
+     ]
+    ],
+    "colors": {
+     "direct": "#F2B134",
+     "battery": "#E07A1F",
+     "grid": "#6F86B5",
+     "export": "#F6F1E7"
+    },
+    "note": "Illustrative day, 6–8pm window. Your battery covers your home first, sends the rest to the grid, and has less left for the night. Every day, for 5 years."
+   }
   },
   {
    "kind": "big",
