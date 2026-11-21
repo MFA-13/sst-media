@@ -9,7 +9,7 @@
   },
   {
    "kind": "big",
-   "text": "Your bill shows how much power you use each month.",
+   "text": "Your bill shows you how much power you use each <span class='accent'>month.</span>",
    "sub": "It doesn't show when. And for a battery, when is the whole point."
   },
   {
