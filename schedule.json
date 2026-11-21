@@ -14,10 +14,13 @@
    "spec": "specs/week1/c01_5to9.json",
    "date": "2026-11-21",
    "time": "11:30",
-   "status": "approved",
+   "status": "queued",
    "approved_by": "\"c01 approved.\" (Mason, canvas comment in the marketing chat, 2026-11-21 00:04 HST)",
    "hold": null,
-   "buffer_post_ids": {},
+   "buffer_post_ids": {
+    "instagram": "6b016ccdd9cbb430a1392aa7",
+    "facebook": "6b016cd65e993799d86c1a6d"
+   },
    "approval_request_row": null,
    "superseded_requests": [
     "https://app.notion.com/p/41e69a9b1cb981b5868fee233aa8f876"
