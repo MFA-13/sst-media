@@ -190,7 +190,7 @@ def faucet_svg(hl):
     Y, C, D = "#F2B134", "#F6F1E7", "rgba(246,241,231,0.35)"
     fc = Y if hl == "faucet" else D
     bc = Y if hl == "bucket" else D
-    return f'''<svg width="700" height="420" viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" style="margin-top:56px" aria-hidden="true">
+    return f'''<svg width="860" height="420" viewBox="0 0 860 420" xmlns="http://www.w3.org/2000/svg" style="margin-top:56px" aria-hidden="true">
 <g fill="none" stroke="{fc}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
 <path d="M40 70 H250 Q300 70 300 120 V150"></path>
 <path d="M40 40 V100"></path>
@@ -204,7 +204,7 @@ def faucet_svg(hl):
 </g>
 <path d="M{213 if hl == "bucket" else 220} {310 if hl == "bucket" else 360} L225 400 H375 L{387 if hl == "bucket" else 380} {310 if hl == "bucket" else 360} Z" fill="{bc}" opacity="0.85"></path>
 <text x="450" y="{110 if hl == "faucet" else 330}" fill="{Y}" font-size="44" font-weight="800">{"kW" if hl == "faucet" else "kWh"}</text>
-<text x="450" y="{160 if hl == "faucet" else 380}" fill="{C}" font-size="30" font-weight="600">{"how hard it flows" if hl == "faucet" else "how much you end up with"}</text>
+<text x="450" y="{160 if hl == "faucet" else 380}" fill="{C}" font-size="30" font-weight="600">{"the faucet's size" if hl == "faucet" else "what's in the bucket"}</text>
 </svg>'''
 
 
