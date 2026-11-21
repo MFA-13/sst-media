@@ -185,6 +185,29 @@ def flow_chart_svg(c):
     return "".join(out) + f'<div style="font-size:26px;font-weight:600;margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:10px 24px">{legend}</div>' + (f'<div style="font-size:22px;opacity:0.7;margin-top:14px">{c["note"]}</div>' if c.get("note") else "")
 
 
+def faucet_svg(hl):
+    # Faucet pouring into a bucket. hl = "faucet" (kW) or "bucket" (kWh) gets the yellow highlight.
+    Y, C, D = "#F2B134", "#F6F1E7", "rgba(246,241,231,0.35)"
+    fc = Y if hl == "faucet" else D
+    bc = Y if hl == "bucket" else D
+    return f'''<svg width="700" height="420" viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" style="margin-top:56px" aria-hidden="true">
+<g fill="none" stroke="{fc}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+<path d="M40 70 H250 Q300 70 300 120 V150"></path>
+<path d="M40 40 V100"></path>
+<path d="M170 70 V30 M140 30 H200"></path>
+</g>
+<g stroke="{fc}" stroke-width="{26 if hl == "faucet" else 14}" stroke-linecap="round" opacity="0.9">
+<line x1="300" y1="175" x2="300" y2="250"></line>
+</g>
+<g fill="none" stroke="{bc}" stroke-width="12" stroke-linejoin="round">
+<path d="M190 250 L225 400 H375 L410 250"></path>
+</g>
+<path d="M{213 if hl == "bucket" else 220} {310 if hl == "bucket" else 360} L225 400 H375 L{387 if hl == "bucket" else 380} {310 if hl == "bucket" else 360} Z" fill="{bc}" opacity="0.85"></path>
+<text x="450" y="{110 if hl == "faucet" else 330}" fill="{Y}" font-size="44" font-weight="800">{"kW" if hl == "faucet" else "kWh"}</text>
+<text x="450" y="{160 if hl == "faucet" else 380}" fill="{C}" font-size="30" font-weight="600">{"how hard it flows" if hl == "faucet" else "how much you end up with"}</text>
+</svg>'''
+
+
 def slide_html(s, i, n):
     theme = s.get("theme", "light")
     if theme == "sun": theme = "dark"
@@ -198,6 +221,8 @@ def slide_html(s, i, n):
         inner = f'<div class="big">{s["text"]}</div>'
         if s.get("sub"):
             inner += f'<div class="text">{s["sub"]}</div>'
+        if s.get("illo"):
+            inner += faucet_svg(s["illo"])
     elif kind == "stat":
         inner = (f'<div class="big">{s["pre"]}</div><div class="stat" style="margin-top:40px">' if s.get("pre") else '<div class="stat">') + f'{s["stat"]}</div><div class="statlabel">{s["label"]}</div>'
         if s.get("sub"):

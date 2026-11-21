@@ -11,12 +11,14 @@
   {
    "kind": "big",
    "text": "kW = <span class='accent'>how big the system is.</span>",
-   "sub": "Like the size of a faucet."
+   "sub": "Like the size of a faucet.",
+   "illo": "faucet"
   },
   {
    "kind": "big",
    "text": "kWh = <span class='accent'>how much energy the system makes.</span>",
-   "sub": "Like how much water ends up in the bucket."
+   "sub": "Like how much water ends up in the bucket.",
+   "illo": "bucket"
   },
   {
    "kind": "stat",
