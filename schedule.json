@@ -40,7 +40,10 @@
    "approved_by": null,
    "hold": null,
    "buffer_post_ids": {},
-   "approval_request_row": "https://app.notion.com/p/41f69a9b1cb9812289a1e8dd4a5fa41e"
+   "approval_request_row": null,
+   "superseded_requests": [
+    "https://app.notion.com/p/41f69a9b1cb9812289a1e8dd4a5fa41e"
+   ]
   },
   {
    "id": "w1_c04_battery",
