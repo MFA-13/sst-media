@@ -181,7 +181,8 @@ def flow_chart_svg(c):
     out.append(band(l3, l4, "url(#chg)"))
     out.append(band(l4, l5, S["export"], 0.16))
     if win:
-        out.append(band(l5, l6, S["battery"], 0.6))
+        out.append('<defs><pattern id="b2g" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="16" height="16" fill="#F6F1E7"></rect><rect width="8" height="16" fill="' + S["battery"] + '"></rect></pattern></defs>')
+        out.append(band(l5, l6, "url(#b2g)"))
     sd = " ".join(f'{"M" if i == 0 else "L"}{x(h):.1f},{y(v):.1f}' for i, (h, v) in enumerate(zip(hrs, l5)))
     out.append(f'<path d="{sd}" fill="none" stroke="{S["direct"]}" stroke-width="3" stroke-dasharray="10 8"></path>')
     hd = " ".join(f'{"M" if i == 0 else "L"}{x(h):.1f},{y(v):.1f}' for i, (h, v) in enumerate(zip(hrs, home)))
@@ -194,7 +195,7 @@ def flow_chart_svg(c):
     items = [("Solar used directly", S["direct"], 1), ("Battery powering home", S["battery"], 1), ("Bought from HECO", S["grid"], 1),
              ("Charging the battery", "repeating-linear-gradient(45deg," + S["battery"] + " 0 6px,#14213D 6px 12px)", 1), ("Solar sent to grid", S["export"], 0.16)]
     if win:
-        items.append(("Battery sent to grid", S["battery"], 0.6))
+        items.append(("Battery sent to grid", "repeating-linear-gradient(-45deg," + S["battery"] + " 0 6px,#F6F1E7 6px 12px)", 1))
     legend = "".join(f'<div style="display:flex;align-items:center;gap:12px"><span style="width:28px;height:28px;border-radius:4px;background:{col};opacity:{op}"></span>{n}</div>' for n, col, op in items)
     legend += '<div style="display:flex;align-items:center;gap:12px"><span style="width:28px;height:5px;background:#F6F1E7"></span>Home use</div>'
     return "".join(out) + f'<div style="font-size:26px;font-weight:600;margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:10px 24px">{legend}</div>' + (f'<div style="font-size:22px;opacity:0.7;margin-top:14px">{c["note"]}</div>' if c.get("note") else "")
