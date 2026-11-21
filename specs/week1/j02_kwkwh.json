@@ -15,7 +15,7 @@
   },
   {
    "kind": "big",
-   "text": "kWh = how much energy it actually makes.",
+   "text": "kWh = <span class='accent'>how much energy the system makes.</span>",
    "sub": "Like how much water ends up in the bucket."
   },
   {
