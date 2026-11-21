@@ -1,3 +1,4 @@
+import re
 import json
 import base64
 import sys
@@ -224,7 +225,16 @@ def faucet_svg(hl):
 </svg>'''
 
 
+def _split_accent(t):
+    # Brand rule (Mason, Nov 21): a yellow sentence that follows a white one starts on its own line.
+    return re.sub(r"([.?!][\u201d\"]?)\s+<span class=(['\"])accent\2>", r"\1<br><span class=\2accent\2>", t)
+
+
 def slide_html(s, i, n):
+    s = dict(s)
+    for k in ("text", "pre"):
+        if isinstance(s.get(k), str):
+            s[k] = _split_accent(s[k])
     theme = s.get("theme", "light")
     if theme == "sun": theme = "dark"
     inner = ""
