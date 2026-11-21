@@ -9,8 +9,7 @@
   },
   {
    "kind": "big",
-   "text": "Your bill shows you how much power you use each <span class='accent'>month.</span>",
-   "sub": "It doesn't show your daily usage pattern, and that's what matters for a battery."
+   "text": "Your bill shows how much energy you use each <span class='accent'>month.</span></div><div class='big' style='margin-top:36px'>Your battery needs to know how much you use each <span class='accent'>day.</span>"
   },
   {
    "kind": "big",
