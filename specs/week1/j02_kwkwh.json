@@ -10,7 +10,7 @@
   },
   {
    "kind": "big",
-   "text": "kW = how big the system is.",
+   "text": "kW = <span class='accent'>how big the system is.</span>",
    "sub": "Like the size of a faucet."
   },
   {
