@@ -5,7 +5,7 @@
   {
    "kind": "hook",
    "theme": "dark",
-   "text": "Your installer said <span class='accent'>“true-up.”</span> Here's what it can cost you.",
+   "text": "Your installer said your solar credits would cover you. <span class='accent'>They have an expiration date.</span>",
    "sub": "Solar Words, Straight #1"
   },
   {
