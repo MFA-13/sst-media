@@ -46,7 +46,7 @@
    "approved_by": null,
    "hold": null,
    "buffer_post_ids": {},
-   "approval_request_row": null,
+   "approval_request_row": "https://app.notion.com/p/41f69a9b1cb98193aca0fefa61fb9992",
    "superseded_requests": [
     "https://app.notion.com/p/41f69a9b1cb9812289a1e8dd4a5fa41e"
    ]
