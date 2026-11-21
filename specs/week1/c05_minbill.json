@@ -45,13 +45,13 @@
   },
   {
    "kind": "big",
-   "text": "And credits you bank but don't use get settled once a year.",
-   "sub": "Every 12 months from your agreement start, HECO reconciles. Leftover banked credits are then set to zero."
+   "text": "So sizing a system to hit $0 <span class='accent'>just gives you credits.</span>"
   },
   {
    "kind": "big",
-   "theme": "dark",
-   "text": "So sizing a system to hit $0 usually means paying for panels you never get credit for."
+   "text": "And credits you bank but don't use <span class='accent'>get erased at the end of each year.</span>",
+   "sub": "Every 12 months from your agreement start, HECO reconciles. Leftover banked credits are then set to zero.",
+   "theme": "dark"
   },
   {
    "kind": "cta",
