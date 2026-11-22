@@ -43,16 +43,20 @@
    "spec": "specs/week1/c05_minbill.json",
    "date": "2026-11-23",
    "time": "11:30",
-   "status": "approved",
+   "status": "queued",
    "approved_by": "\"Get rid of “exceptions exist” sentence, and then it’s confirmed.\" + \"Good caption\" (Mason, texts to Instinct recorded on request row, 2026-11-22 02:26 HST). Edit applied 2026-11-22 09:50 HST: slide 6 sub now only \"Size for your usage and your program, not a zero-bill promise.\" No other changes.",
    "hold": null,
-   "buffer_post_ids": {},
-   "approval_request_row": "https://app.notion.com/p/42069a9b1cb981a6b3affc9d03856d20",
+   "buffer_post_ids": {
+    "instagram": "6b0345d5d864a01105ee0b68",
+    "facebook": "6b0345d5c72676f5e955edf2"
+   },
+   "approval_request_row": null,
    "superseded_requests": [
     "https://app.notion.com/p/41f69a9b1cb9812289a1e8dd4a5fa41e",
-    "https://app.notion.com/p/41f69a9b1cb98193aca0fefa61fb9992"
+    "https://app.notion.com/p/41f69a9b1cb98193aca0fefa61fb9992",
+    "https://app.notion.com/p/42069a9b1cb981a6b3affc9d03856d20"
    ],
-   "approval_request_row_answered": "https://app.notion.com/p/42069a9b1cb981a6b3affc9d03856d20"
+   "queued_images_commit": "40992144e12419dcf1ccd9db79e4401e0d2d0e65"
   },
   {
    "id": "w1_c04_battery",
@@ -63,7 +67,7 @@
    "approved_by": null,
    "hold": null,
    "buffer_post_ids": {},
-   "approval_request_row": null,
+   "approval_request_row": "https://app.notion.com/p/42069a9b1cb981d58653cfd27ec38e74",
    "superseded_requests": [
     "https://app.notion.com/p/42069a9b1cb98162972de7742ffc3d5b"
    ]
