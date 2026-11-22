@@ -43,15 +43,16 @@
    "spec": "specs/week1/c05_minbill.json",
    "date": "2026-11-23",
    "time": "11:30",
-   "status": "draft",
-   "approved_by": null,
+   "status": "approved",
+   "approved_by": "\"Get rid of “exceptions exist” sentence, and then it’s confirmed.\" + \"Good caption\" (Mason, texts to Instinct recorded on request row, 2026-11-22 02:26 HST). Edit applied 2026-11-22 09:50 HST: slide 6 sub now only \"Size for your usage and your program, not a zero-bill promise.\" No other changes.",
    "hold": null,
    "buffer_post_ids": {},
    "approval_request_row": "https://app.notion.com/p/42069a9b1cb981a6b3affc9d03856d20",
    "superseded_requests": [
     "https://app.notion.com/p/41f69a9b1cb9812289a1e8dd4a5fa41e",
     "https://app.notion.com/p/41f69a9b1cb98193aca0fefa61fb9992"
-   ]
+   ],
+   "approval_request_row_answered": "https://app.notion.com/p/42069a9b1cb981a6b3affc9d03856d20"
   },
   {
    "id": "w1_c04_battery",
@@ -162,7 +163,7 @@
    "time": "18:30",
    "status": "draft",
    "approved_by": null,
-   "hold": "Waiting on Instinct research (NEM / CGS+ / Smart Export).",
+   "hold": "Research back (Instinct, Nov 22, row https://app.notion.com/p/42069a9b1cb981d3826ef49c57f456b1). Not drafted yet (marketing chat).",
    "buffer_post_ids": {},
    "approval_request_row": null
   },
@@ -173,7 +174,7 @@
    "time": "11:30",
    "status": "draft",
    "approved_by": null,
-   "hold": "Waiting on Instinct research (lease vs PPA vs buy).",
+   "hold": "Research back (Instinct, Nov 22, row https://app.notion.com/p/42069a9b1cb981bd81cac6abaae97749). Not drafted yet (marketing chat). 48E lease credit flagged unverified.",
    "buffer_post_ids": {},
    "approval_request_row": null
   },
