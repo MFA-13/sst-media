@@ -14,7 +14,7 @@
    "spec": "specs/week1/c01_5to9.json",
    "date": "2026-11-21",
    "time": "11:30",
-   "status": "queued",
+   "status": "posted",
    "approved_by": "\"c01 approved.\" (Mason, canvas comment in the marketing chat, 2026-11-21 00:04 HST)",
    "hold": null,
    "buffer_post_ids": {
@@ -24,7 +24,8 @@
    "approval_request_row": null,
    "superseded_requests": [
     "https://app.notion.com/p/41e69a9b1cb981b5868fee233aa8f876"
-   ]
+   ],
+   "posted_at": "2026-11-21 11:30 HST (Buffer: IG + FB sent)"
   },
   {
    "id": "w1_c02_door",
