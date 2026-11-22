@@ -211,12 +211,27 @@ setT(0);
     return page, total
 
 
+def carousel_status(post_id):
+    sched = json.loads((ROOT / "schedule.json").read_text())
+    for p in sched["posts"]:
+        if p.get("id") == post_id:
+            return p.get("status")
+    return None
+
+
 def main():
-    spec_path = Path(sys.argv[1])
-    previews = [float(x) for x in sys.argv[2:]]
+    args = sys.argv[1:]
+    test = "--test" in args
+    args = [a for a in args if a != "--test"]
+    spec_path = Path(args[0])
+    previews = [float(x) for x in args[1:]]
     spec = json.loads(spec_path.read_text())
+    # Rule (Mason, Nov 22): Reels are only made from carousels Mason already approved.
+    status = carousel_status(spec["id"])
+    if status not in ("approved", "queued", "posted") and not test and not previews:
+        sys.exit(f"{spec['id']} is '{status}', not approved. Reels are only made from approved carousels. Use --test for a throwaway render in /tmp.")
     page, total = build(spec)
-    out_dir = ROOT / "rendered/reels"
+    out_dir = Path("/tmp/reel_tests") if test else ROOT / "rendered/reels"
     out_dir.mkdir(parents=True, exist_ok=True)
     frames = Path("/tmp/reel_frames") / spec["id"]
     frames.mkdir(parents=True, exist_ok=True)

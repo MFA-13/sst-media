@@ -21,6 +21,8 @@ A post with a non-empty `hold` is never queued, even if approved.
 - Every stat on a slide needs a source on its sources slide.
 - Never say "unbiased" or "independent". Never imply affiliation with HECO or any agency.
 - If an approved post's slides change after approval, set it back to `draft` and ask Mason again.
+- **Reels are only made from carousels Mason already approved** (status `approved`, `queued` or `posted`). `reels/reel.py` refuses anything else; `--test` renders to /tmp only and is never posted or sent for approval. (Mason, Nov 22.)
+- A Reel is its own post and needs its own approval from Mason before it goes to Buffer, even if its carousel was approved.
 
 ## Render
 ```
