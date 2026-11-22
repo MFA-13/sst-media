@@ -52,7 +52,7 @@
    "theme": "dark",
    "pre": "HECO will also pay you to share your battery.",
    "stat": "$2,000",
-   "label": "upfront for committing 5 kW to its BYOD Plus program, <span class='accent'>plus a monthly credit</span> (~$52 in HECO's example)."
+   "label": "upfront for committing 5 kW to its BYOD Plus program, <span class='accent'>plus a monthly credit</span> (~$52 in HECO's example) if you're not on old net metering (NEM)."
   },
   {
    "kind": "chart",

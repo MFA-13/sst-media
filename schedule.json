@@ -62,7 +62,10 @@
    "approved_by": null,
    "hold": null,
    "buffer_post_ids": {},
-   "approval_request_row": "https://app.notion.com/p/42069a9b1cb98162972de7742ffc3d5b"
+   "approval_request_row": null,
+   "superseded_requests": [
+    "https://app.notion.com/p/42069a9b1cb98162972de7742ffc3d5b"
+   ]
   },
   {
    "id": "w1_j01_trueup",
@@ -104,18 +107,84 @@
    "time": null,
    "status": "draft",
    "approved_by": null,
-   "hold": null,
+   "hold": "Parked: c04 now covers BYOD Plus. Reuse later or merge into battery payback post.",
    "buffer_post_ids": {},
    "approval_request_row": null
   },
   {
    "id": "w2_j04_fuel",
    "spec": "specs/week2/j04_fuel.json",
-   "date": null,
-   "time": null,
+   "date": "2026-11-28",
+   "time": "18:30",
    "status": "draft",
    "approved_by": null,
    "hold": null,
+   "buffer_post_ids": {},
+   "approval_request_row": null
+  },
+  {
+   "id": "w2_n01_32club",
+   "spec": "specs/week2/n01_32club.json",
+   "date": "2026-11-29",
+   "time": "11:30",
+   "status": "draft",
+   "approved_by": null,
+   "hold": "Not drafted yet (marketing chat).",
+   "buffer_post_ids": {},
+   "approval_request_row": null
+  },
+  {
+   "id": "w2_n02_quotes",
+   "spec": "specs/week2/n02_quotes.json",
+   "date": "2026-11-30",
+   "time": "18:30",
+   "status": "draft",
+   "approved_by": null,
+   "hold": "Not drafted yet (marketing chat).",
+   "buffer_post_ids": {},
+   "approval_request_row": null
+  },
+  {
+   "id": "w2_n03_contract",
+   "spec": "specs/week2/n03_contract.json",
+   "date": "2026-12-01",
+   "time": "11:30",
+   "status": "draft",
+   "approved_by": null,
+   "hold": "Not drafted yet (marketing chat). Research done.",
+   "buffer_post_ids": {},
+   "approval_request_row": null
+  },
+  {
+   "id": "w2_j05_programs",
+   "spec": "specs/week2/j05_programs.json",
+   "date": "2026-12-02",
+   "time": "18:30",
+   "status": "draft",
+   "approved_by": null,
+   "hold": "Waiting on Instinct research (NEM / CGS+ / Smart Export).",
+   "buffer_post_ids": {},
+   "approval_request_row": null
+  },
+  {
+   "id": "w2_n04_lease",
+   "spec": "specs/week2/n04_lease.json",
+   "date": "2026-12-03",
+   "time": "11:30",
+   "status": "draft",
+   "approved_by": null,
+   "hold": "Waiting on Instinct research (lease vs PPA vs buy).",
+   "buffer_post_ids": {},
+   "approval_request_row": null
+  },
+  {
+   "id": "w2_n05_battery_payback",
+   "spec": "specs/week2/n05_battery_payback.json",
+   "date": "2026-12-04",
+   "time": "18:30",
+   "status": "draft",
+   "approved_by": null,
+   "hold": "Not drafted yet (marketing chat). Battery cost research done.",
    "buffer_post_ids": {},
    "approval_request_row": null
   }
