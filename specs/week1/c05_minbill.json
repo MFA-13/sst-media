@@ -1,6 +1,6 @@
 {
  "id": "w1_c05_minbill",
- "caption": "Solar can cut your Hawaiian Electric bill a lot. It can't take it to zero. Here's why. Sources on the last slide.\n\nFollow for more plain-English Oʻahu solar math.\n\n#Oahu #HawaiiSolar #SolarPower #HawaiianElectric #Honolulu",
+ "caption": "Solar can cut your Hawaiian Electric bill a lot. It can't take it to zero. On the standard Oʻahu residential rate, the monthly floor is about $32 ($31.62 in Nov 2026). Past that, extra panels mostly pile up credits, and on most export programs unused credits get erased at the yearly reconciliation. Size for your usage and your program, not a $0 promise. Sources on the last slide.\n\nFollow for more plain-English Oʻahu solar math.\n\n#Oahu #HawaiiSolar #SolarPower #HawaiianElectric #Honolulu",
  "slides": [
   {
    "kind": "hook",
@@ -9,9 +9,9 @@
   },
   {
    "kind": "stat",
-   "stat": "~$30",
-   "label": "a month: the minimum on Hawaiian Electric's standard Oʻahu residential rate, even if you use zero power.",
-   "sub": "$25 base, $30.22 with surcharges (Nov 2026)."
+   "stat": "~$32",
+   "label": "a month: the floor on Hawaiian Electric's standard Oʻahu residential rate, even if you use zero power.",
+   "sub": "$30.22 minimum charge + $1.40 Green Infrastructure Fee = $31.62 (Schedule R, single-phase, Nov 2026)."
   },
   {
    "kind": "chart",
@@ -34,24 +34,29 @@
      0.17
     ],
     "floor": 0.17,
-    "floor_label": "~$30 minimum",
+    "floor_label": "~$32 floor",
     "xlab": [
      "No solar",
      "Bigger system →"
     ],
     "ylab": "Monthly bill",
-    "note": "Illustrative shape. Floor: Schedule R 1-phase minimum, $30.22 effective (Nov 2026)."
+    "note": "Illustrative shape. Floor: Schedule R 1-phase, $30.22 minimum + $1.40 GIF = $31.62 (Nov 2026)."
    }
   },
   {
    "kind": "big",
-   "text": "So any solar past that ~$30 floor <span class='accent'>just piles up credits.</span>"
+   "text": "So any solar past that ~$32 floor <span class='accent'>just piles up credits.</span>"
   },
   {
    "kind": "big",
-   "text": "And credits you bank but don't use <span class='accent'>get erased at the end of each year.</span>",
-   "sub": "Every 12 months from your agreement start, HECO reconciles. Leftover banked credits are then set to zero.",
+   "text": "And banked credits you don't use <span class='accent'>get erased once a year.</span>",
+   "sub": "On SRE Export, NEM, CGS Plus and Smart Export, HECO reconciles every 12 months from your agreement start (not Dec 31). Leftover credits then go to zero.",
    "theme": "dark"
+  },
+  {
+   "kind": "big",
+   "text": "So buying extra panels just to chase a $0 bill <span class='accent'>can mean paying for credits that vanish.</span>",
+   "sub": "Size for your usage and your program, not a zero-bill promise. Exceptions exist: old CGS credits expire monthly; battery grid-service credits are a separate bucket."
   },
   {
    "kind": "cta",
@@ -64,8 +69,10 @@
   {
    "kind": "sources",
    "items": [
-    "Hawaiian Electric effective rate summary, Nov 2026: Schedule R 1-phase minimum charge $25.00 base, $30.22 effective.",
-    "Hawaiian Electric Rule 32, Export Rider (Sheets 49.40-I, J, K): credits may only reduce the bill to the minimum charge; reconciliation every 12 months from the Interconnection Agreement start; remaining banked kWh credits are set to zero.",
+    "Hawaiian Electric effective rate summary, Nov 2026 (Oʻahu): Schedule R 1-phase minimum charge $30.22 effective ($25.00 base) plus Green Infrastructure Fee $1.40, added to all bills = $31.62.",
+    "Hawaiian Electric GIF tariff, Sheets 71/71A: fee applies on top of minimum charges.",
+    "Rule 32 SRE Export Rider (Sheets 49.40-I to L): credits only reduce the bill to the minimum plus surcharges; reconciliation every 12 months from agreement start, then leftover banked kWh set to zero; BYOD grid-service credits tracked separately.",
+    "Rules 18 (NEM), 24 (CGS Plus), 25 (Smart Export): 12-month reconciliation, unused credits expire. Rule 23 (CGS): unused credits forfeited monthly. Rule 33 (BYOD): grid-service credits carry forward, forfeited at program exit.",
     "Photo: Benjamin Jopen on Unsplash."
    ],
    "note": "Not affiliated with Hawaiian Electric or any government agency."
