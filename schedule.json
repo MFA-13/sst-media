@@ -65,11 +65,12 @@
    "time": "18:30",
    "status": "draft",
    "approved_by": null,
-   "hold": null,
+   "hold": "NOT APPROVED (Mason, Nov 22 10:07 HST, recorded by Instinct on request row). Needs sourced revisions before a new approval request: slide 4 explicit Rule 33/BYOD Plus monthly-credit math + NEM vs NEM Plus eligibility from official text; slide 5 house-first vs grid-first claim verified against official Rule 33 text; slide 6 plainer wording. Row handed to the manager (Hand to Claude). Clear this hold only once the spec is revised with sources.",
    "buffer_post_ids": {},
-   "approval_request_row": "https://app.notion.com/p/42069a9b1cb981d58653cfd27ec38e74",
+   "approval_request_row": null,
    "superseded_requests": [
-    "https://app.notion.com/p/42069a9b1cb98162972de7742ffc3d5b"
+    "https://app.notion.com/p/42069a9b1cb98162972de7742ffc3d5b",
+    "https://app.notion.com/p/42069a9b1cb981d58653cfd27ec38e74"
    ]
   },
   {
@@ -81,7 +82,7 @@
    "approved_by": null,
    "hold": null,
    "buffer_post_ids": {},
-   "approval_request_row": null
+   "approval_request_row": "https://app.notion.com/p/42169a9b1cb981c0afd9d4c4661de5a6"
   },
   {
    "id": "w1_j02_kwkwh",
