@@ -80,9 +80,12 @@
    "time": "11:30",
    "status": "draft",
    "approved_by": null,
-   "hold": null,
+   "hold": "Held before reaching Mason (Instinct main, Nov 22 16:56 HST, on request row): needs an official-source check of the hook's credit-expiry claim and slide 4's reset against program scope (export vs battery/BYOD Plus credit banks), plus annual timing / reconciliation bill credit. Handed to the manager (Hand to Claude). NOT approved. Clear only once the spec is checked/revised with official sources; then send a fresh approval request.",
    "buffer_post_ids": {},
-   "approval_request_row": "https://app.notion.com/p/42169a9b1cb981c0afd9d4c4661de5a6"
+   "approval_request_row": null,
+   "superseded_requests": [
+    "https://app.notion.com/p/42169a9b1cb981c0afd9d4c4661de5a6"
+   ]
   },
   {
    "id": "w1_j02_kwkwh",
