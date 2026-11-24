@@ -43,7 +43,7 @@
    "spec": "specs/week1/c05_minbill.json",
    "date": "2026-11-23",
    "time": "11:30",
-   "status": "queued",
+   "status": "posted",
    "approved_by": "\"Get rid of “exceptions exist” sentence, and then it’s confirmed.\" + \"Good caption\" (Mason, texts to Instinct recorded on request row, 2026-11-22 02:26 HST). Edit applied 2026-11-22 09:50 HST: slide 6 sub now only \"Size for your usage and your program, not a zero-bill promise.\" No other changes.",
    "hold": null,
    "buffer_post_ids": {
@@ -56,7 +56,8 @@
     "https://app.notion.com/p/41f69a9b1cb98193aca0fefa61fb9992",
     "https://app.notion.com/p/42069a9b1cb981a6b3affc9d03856d20"
    ],
-   "queued_images_commit": "40992144e12419dcf1ccd9db79e4401e0d2d0e65"
+   "queued_images_commit": "40992144e12419dcf1ccd9db79e4401e0d2d0e65",
+   "posted_at": "2026-11-23 11:30 HST (Buffer: IG + FB sent)"
   },
   {
    "id": "w1_c04_battery",
