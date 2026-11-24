@@ -221,7 +221,7 @@ def faucet_svg(hl):
 </g>
 <path d="M{213 if hl == "bucket" else 220} {310 if hl == "bucket" else 360} L225 400 H375 L{387 if hl == "bucket" else 380} {310 if hl == "bucket" else 360} Z" fill="{bc}" opacity="0.85"></path>
 <text x="450" y="{110 if hl == "faucet" else 330}" fill="{Y}" font-size="44" font-weight="800">{"kW" if hl == "faucet" else "kWh"}</text>
-<text x="450" y="{160 if hl == "faucet" else 380}" fill="{C}" font-size="30" font-weight="600">{"the faucet's size" if hl == "faucet" else "what's in the bucket"}</text>
+<text x="450" y="{160 if hl == "faucet" else 380}" fill="{C}" font-size="30" font-weight="600">{"the most it can pour" if hl == "faucet" else "what's in the bucket"}</text>
 </svg>'''
 
 
