@@ -97,7 +97,11 @@
    "approved_by": null,
    "hold": null,
    "buffer_post_ids": {},
-   "approval_request_row": "https://app.notion.com/p/42269a9b1cb981b99aefcaf3916c7fcb"
+   "approval_request_row": "https://app.notion.com/p/42269a9b1cb9819ab8b3cecca98713fd",
+   "superseded_requests": [
+    "https://app.notion.com/p/42269a9b1cb981b99aefcaf3916c7fcb"
+   ],
+   "revision_note": "2026-11-24 09:41 HST: Mason asked for faucet change (not approved). Slide 2 sub + illo label revised; slide 4 scoped to home bill. Re-sent for approval."
   },
   {
    "id": "w1_c03_billguess",
