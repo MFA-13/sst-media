@@ -10,22 +10,22 @@
   },
   {
    "kind": "big",
-   "text": "kW = <span class='accent'>how big the system is.</span>",
-   "sub": "Like a faucet's size: the most it can pour when it's wide open. Most hours, it runs below that.",
-   "illo": "faucet"
+   "text": "kW = <span class='accent'>how fast.</span>",
+   "sub": "A system's kW rating is its top speed: the most it can put out in full midday sun. Most hours it runs slower.",
+   "illo": "speedo"
   },
   {
    "kind": "big",
-   "text": "kWh = <span class='accent'>how much energy the system makes.</span>",
-   "sub": "Like how much water ends up in the bucket.",
-   "illo": "bucket"
+   "text": "kWh = <span class='accent'>how far.</span>",
+   "sub": "Energy adds up over time, like miles on a trip.",
+   "illo": "odo"
   },
   {
    "kind": "stat",
    "theme": "dark",
    "stat": "1 × 1",
-   "label": "1 kW running for 1 hour = 1 kWh.",
-   "sub": "Your home bill counts kWh. Your quote sells kW."
+   "label": "1 kW for 1 hour = 1 kWh.",
+   "sub": "Like 60 mph for an hour = 60 miles. Your home bill counts kWh. Your quote sells kW."
   },
   {
    "kind": "big",

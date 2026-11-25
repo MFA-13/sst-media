@@ -14,72 +14,63 @@
   {
    "kind": "big",
    "theme": "dark",
-   "text": "If they guess wrong:</div><div class='big' style='font-size:56px;margin-top:48px'>Too small: <span class='accent'>you still buy from HECO at night.</span></div><div class='big' style='font-size:56px;margin-top:36px'>Too big: <span class='accent'>you paid for storage you never fill.</span>"
+   "text": "If they guess wrong:</div><div class='big' style='font-size:56px;margin-top:48px'>Too small: <span class='accent'>your extra solar goes to the grid for 13.5¢ instead of into your evening.</span></div><div class='big' style='font-size:56px;margin-top:36px'>Too big: <span class='accent'>you paid for storage you never fill.</span>"
   },
   {
    "kind": "chart",
    "theme": "dark",
-   "text": "Same house. Four setups. <span class='accent'>Where the power goes.</span>",
+   "text": "Same house, same panels. <span class='accent'>Three battery sizes.</span>",
    "chart": {
     "type": "stack",
     "series": [
-     {
-      "name": "Bought from HECO, ~50¢ per kWh",
-      "color": "#5B6B8C"
-     },
      {
       "name": "Solar you use as it's made",
       "color": "#F2B134"
      },
      {
-      "name": "Solar stored in battery, used after dark",
+      "name": "Solar stored, used in the evening",
       "color": "#E07A1F"
      },
      {
-      "name": "Solar sent back, 13.5¢ midday",
+      "name": "Solar sent to the grid, 13.5¢ per kWh",
       "color": "#F6F1E7"
+     },
+     {
+      "name": "Battery space you paid for but never fill",
+      "color": "none",
+      "pattern": "empty"
      }
     ],
     "bars": [
      {
-      "label": "Too small",
+      "label": "Battery|too small",
       "parts": [
        55,
-       45,
-       0,
-       5
+       10,
+       35,
+       0
       ]
      },
      {
-      "label": "Right-sized",
+      "label": "Battery|right-sized",
       "parts": [
-       33,
-       67,
-       0,
-       20
-      ]
-     },
-     {
-      "label": "Too big",
-      "parts": [
+       55,
        25,
-       75,
-       0,
-       70
+       20,
+       0
       ]
      },
      {
-      "label": "Sized for|a battery|= just right",
-      "color": "#F2B134",
+      "label": "Battery|too big",
       "parts": [
-       8,
-       67,
+       55,
        25,
-       12
+       20,
+       15
       ]
      }
     ],
-    "note": "Illustrative proportions, not one real house. Battery bar includes some storage losses. Rates: HECO Nov 2026, Rule 32."
+    "note": "Illustrative: one day of solar from the same panels (solid bars = 100%). Hatched = empty battery capacity, not energy. Export credit: Rule 32 Smart Export, midday, Oʻahu agreements Apr 2024–Apr 2027."
    }
   },
   {

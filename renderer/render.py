@@ -71,19 +71,23 @@ def stack_chart_svg(c):
     ph = H - T - B
     n = len(c["bars"]); bw = 190 if n <= 3 else 165; gap = (W - n * bw) / (n + 1)
     mx = max(sum(b["parts"]) for b in c["bars"])
-    out = [f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" style="font-family:Inter,sans-serif">']
+    out = [f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" style="font-family:Inter,sans-serif">',
+           '<defs><pattern id="empty" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="18" stroke="#F6F1E7" stroke-opacity="0.45" stroke-width="5"/></pattern></defs>']
     for i, b in enumerate(c["bars"]):
         x0 = gap + i * (bw + gap); y0 = T + ph
         for v, se in zip(b["parts"], c["series"]):
             h = ph * v / mx
-            if h > 0:
+            if h > 0 and se.get("pattern") == "empty":
+                out.append(f'<rect x="{x0+3}" y="{y0-h+3}" width="{bw-6}" height="{h-6}" fill="url(#empty)" stroke="#F6F1E7" stroke-opacity="0.7" stroke-width="3" stroke-dasharray="10 8"/>')
+            elif h > 0:
                 out.append(f'<rect x="{x0}" y="{y0-h}" width="{bw}" height="{h}" fill="{se["color"]}" stroke="#14213D" stroke-width="4"/>')
             y0 -= h
         lines = b["label"].split("|")
         tsp = "".join(f'<tspan x="{x0+bw/2}" dy="{0 if j == 0 else 34}">{t}</tspan>' for j, t in enumerate(lines))
         out.append(f'<text x="{x0+bw/2}" y="{T+ph+42}" fill="{b.get("color", "#F6F1E7")}" font-size="{32 if n <= 3 else 28}" font-weight="700" text-anchor="middle">{tsp}</text>')
     out.append('</svg>')
-    legend = "".join(f'<div style="display:flex;align-items:center;gap:14px;margin-top:10px"><span style="width:30px;height:30px;border-radius:4px;background:{se["color"]}"></span>{se["name"]}</div>' for se in c["series"])
+    sw = lambda se: ('border:3px dashed rgba(246,241,231,.7);background:repeating-linear-gradient(45deg,rgba(246,241,231,.45) 0 4px,transparent 4px 12px)' if se.get("pattern") == "empty" else f'background:{se["color"]}')
+    legend = "".join(f'<div style="display:flex;align-items:center;gap:14px;margin-top:10px"><span style="width:30px;height:30px;border-radius:4px;box-sizing:border-box;{sw(se)}"></span>{se["name"]}</div>' for se in c["series"])
     return "".join(out) + f'<div style="font-size:30px;font-weight:600;margin-top:22px">{legend}</div>' + (f'<div style="font-size:24px;opacity:0.7;margin-top:14px">{c["note"]}</div>' if c.get("note") else "")
 
 
@@ -225,6 +229,28 @@ def faucet_svg(hl):
 </svg>'''
 
 
+def drive_svg(hl):
+    # Speedometer (kW = how fast) and odometer (kWh = how far). hl = "speedo" or "odo" gets the highlight.
+    Y, C, D = "#F2B134", "#F6F1E7", "rgba(246,241,231,0.35)"
+    sc = Y if hl == "speedo" else D
+    oc = Y if hl == "odo" else D
+    import math
+    cx, cy, r = 190, 230, 150
+    ticks = "".join(f'<line x1="{cx+(r-8)*math.cos(math.radians(a)):.1f}" y1="{cy-(r-8)*math.sin(math.radians(a)):.1f}" x2="{cx+(r-34)*math.cos(math.radians(a)):.1f}" y2="{cy-(r-34)*math.sin(math.radians(a)):.1f}"/>' for a in range(180, -1, -30))
+    na = math.radians(35)
+    digits = "".join(f'<rect x="{470+i*62}" y="150" width="54" height="84" rx="6" fill="none" stroke="{oc}" stroke-width="5"/><text x="{497+i*62}" y="214" fill="{oc}" font-size="56" font-weight="800" text-anchor="middle">{d}</text>' for i, d in enumerate("00060"))
+    return f'''<svg width="860" height="380" viewBox="0 0 860 380" xmlns="http://www.w3.org/2000/svg" style="margin-top:56px" aria-hidden="true">
+<path d="M{cx-r} {cy} A{r} {r} 0 0 1 {cx+r} {cy}" fill="none" stroke="{sc}" stroke-width="12" stroke-linecap="round"/>
+<g stroke="{sc}" stroke-width="6" stroke-linecap="round">{ticks}</g>
+<line x1="{cx}" y1="{cy}" x2="{cx+(r-40)*math.cos(na):.1f}" y2="{cy-(r-40)*math.sin(na):.1f}" stroke="{sc}" stroke-width="{12 if hl == "speedo" else 8}" stroke-linecap="round"/>
+<circle cx="{cx}" cy="{cy}" r="14" fill="{sc}"/>
+<text x="{cx}" y="{cy+80}" fill="{Y if hl == "speedo" else C}" font-size="{40 if hl == "speedo" else 32}" font-weight="800" text-anchor="middle">kW = how fast</text>
+{digits}
+<text x="{470+5*62}" y="214" fill="{oc}" font-size="34" font-weight="700"> mi</text>
+<text x="625" y="{cy+80}" fill="{Y if hl == "odo" else C}" font-size="{40 if hl == "odo" else 32}" font-weight="800" text-anchor="middle">kWh = how far</text>
+</svg>'''
+
+
 def _split_accent(t):
     # Brand rule (Mason, Nov 21): a yellow sentence that follows a white one starts on its own line.
     return re.sub(r"([.?!][\u201d\"]?)\s+<span class=(['\"])accent\2>", r"\1<br><span class=\2accent\2>", t)
@@ -248,7 +274,7 @@ def slide_html(s, i, n):
         if s.get("sub"):
             inner += f'<div class="text">{s["sub"]}</div>'
         if s.get("illo"):
-            inner += faucet_svg(s["illo"])
+            inner += drive_svg(s["illo"]) if s["illo"] in ("speedo", "odo") else faucet_svg(s["illo"])
     elif kind == "stat":
         inner = (f'<div class="big">{s["pre"]}</div><div class="stat" style="margin-top:40px">' if s.get("pre") else '<div class="stat">') + f'{s["stat"]}</div><div class="statlabel">{s["label"]}</div>'
         if s.get("sub"):

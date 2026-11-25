@@ -79,7 +79,15 @@ def img_url(path):
 
 
 def build(spec):
-    slides = [s for i, s in enumerate(spec["slides"]) if i not in spec.get("reel", {}).get("skip", [])]
+    rc = spec.get("reel", {})
+    slides = []
+    for i, s in enumerate(spec["slides"]):
+        if i in rc.get("skip", []):
+            continue
+        s = dict(s)
+        if i in rc.get("nosub", []):
+            s.pop("sub", None)
+        slides.append(s)
     scenes, html = [], []
     t = 0.0
     for i, s in enumerate(slides):
