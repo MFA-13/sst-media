@@ -93,7 +93,7 @@
    "spec": "specs/week1/j02_kwkwh.json",
    "date": "2026-11-26",
    "time": "18:30",
-   "status": "approved",
+   "status": "queued",
    "approved_by": "\"Both of those posts look good, and they're approved. Yeah. Get them scheduled and posted up.\" (Mason, marketing chat, 2026-11-25 13:46 MST)",
    "hold": null,
    "buffer_post_ids": {},
@@ -101,18 +101,26 @@
    "superseded_requests": [
     "https://app.notion.com/p/42269a9b1cb981b99aefcaf3916c7fcb"
    ],
-   "revision_note": "2026-11-24 09:41 HST: Mason asked for faucet change (not approved). Slide 2 sub + illo label revised; slide 4 scoped to home bill. Re-sent for approval."
+   "revision_note": "2026-11-24 09:41 HST: Mason asked for faucet change (not approved). Slide 2 sub + illo label revised; slide 4 scoped to home bill. Re-sent for approval.",
+   "buffer": {
+    "instagram": "6b074970209be591e2df6943",
+    "facebook": "6b074971b39ac731b6fc990d"
+   }
   },
   {
    "id": "w1_c03_billguess",
    "spec": "specs/week1/c03_billguess.json",
    "date": "2026-11-27",
    "time": "11:30",
-   "status": "approved",
+   "status": "queued",
    "approved_by": "\"Both of those posts look good, and they're approved. Yeah. Get them scheduled and posted up.\" (Mason, marketing chat, 2026-11-25 13:46 MST)",
    "hold": null,
    "buffer_post_ids": {},
-   "approval_request_row": "https://app.notion.com/p/42369a9b1cb98196a564cd730b084ca5"
+   "approval_request_row": "https://app.notion.com/p/42369a9b1cb98196a564cd730b084ca5",
+   "buffer": {
+    "instagram": "6b0749718e7e43ca693b1854",
+    "facebook": "6b0749727ef3c56ccf7a44d3"
+   }
   },
   {
    "id": "w2_j03_byodplus",
