@@ -5,19 +5,19 @@
   {
    "kind": "hook",
    "theme": "dark",
-   "text": "The biggest line on your HECO bill is <span class='accent'>fuel.</span>",
+   "text": "The biggest line on your HECO bill pays for <span class='accent'>fuel and purchased power.</span>",
    "sub": "Solar Words, Straight #4: Energy Cost Recovery"
   },
   {
    "kind": "stat",
    "stat": "62%",
-   "label": "of a typical Oʻahu bill in November 2026 was the Energy Cost Recovery charge: the fuel and energy HECO buys.",
+   "label": "of a typical Oʻahu bill in November 2026 was the Energy Cost Recovery charge: what HECO pays for fuel and for power it buys from other producers.",
    "sub": "$161.64 of a $260.62 bill (500 kWh)."
   },
   {
    "kind": "chart",
    "theme": "dark",
-   "text": "Same 500 kWh. <span class='accent'>The fuel line did the climbing.</span>",
+   "text": "Same 500 kWh. <span class='accent'>The energy cost line did the climbing.</span>",
    "chart": {
     "type": "stack",
     "series": [
@@ -26,7 +26,7 @@
       "color": "#5B6B8C"
      },
      {
-      "name": "Energy Cost Recovery (fuel + energy)",
+      "name": "Energy Cost Recovery (fuel + purchased power)",
       "color": "#F2B134"
      }
     ],
@@ -53,18 +53,18 @@
   {
    "kind": "big",
    "text": "Why it changes every month:",
-   "sub": "Oʻahu still makes much of its power from imported oil. HECO passes fuel costs through and resets this charge monthly. It says it makes no profit on fuel."
+   "sub": "Oʻahu still makes much of its power from imported oil. HECO passes fuel and purchased-power costs through and resets this charge monthly. It says it makes no profit on fuel."
   },
   {
    "kind": "big",
    "theme": "dark",
-   "text": "Oil jumped this spring. <span class='accent'>Bills followed about two months later.</span>",
-   "sub": "HECO says there's typically a ~60-day lag between buying fuel and billing for it."
+   "text": "Oil jumped this spring. <span class='accent'>Bills followed weeks later.</span>",
+   "sub": "HECO says there's typically a 45 to 60 day lag between global oil prices and customer bills."
   },
   {
    "kind": "big",
    "text": "This is why the solar math changed in 2026.",
-   "sub": "Every kWh your panels cover is a kWh you don't pay the fuel charge on."
+   "sub": "Every kWh your panels cover is a kWh you don't pay the Energy Cost Recovery charge on."
   },
   {
    "kind": "cta",
@@ -79,7 +79,7 @@
    "items": [
     "Hawaiian Electric, Oʻahu Energy Cost Recovery filings: Jan 2026 (18.449¢/kWh; typical 500 kWh bill $194.30) and Nov 2026 (32.327¢/kWh; $161.64 of a $260.62 typical bill).",
     "Hawaiian Electric news release, Apr 1, 2026: rising oil prices will raise bills; no profit on fuel.",
-    "Civil Beat, Apr 2026: HECO spokesperson on the ~60-day lag.",
+    "Hawaiʻi Public Radio, Nov 12, 2026: HECO spokesperson Darren Pai on the typical 45 to 60 day lag between oil prices and bills.",
     "Photo: Benjamin Jopen on Unsplash."
    ],
    "note": "Not affiliated with Hawaiian Electric or any government agency."
