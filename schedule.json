@@ -142,7 +142,11 @@
    "approved_by": null,
    "hold": null,
    "buffer_post_ids": {},
-   "approval_request_row": "https://app.notion.com/p/42469a9b1cb98130b61bfc349dfb2f8e"
+   "approval_request_row": "https://app.notion.com/p/42469a9b1cb981748ffdc559a81c68a4",
+   "superseded_requests": [
+    "https://app.notion.com/p/42469a9b1cb98130b61bfc349dfb2f8e"
+   ],
+   "revision_note": "2026-11-26 09:47 HST: source correction from Instinct main applied (HPR Nov 12 2026 lag cite, ECRC wording). Re-sent for approval."
   },
   {
    "id": "w2_n01_32club",
