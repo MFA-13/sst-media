@@ -93,7 +93,7 @@
    "spec": "specs/week1/j02_kwkwh.json",
    "date": "2026-11-26",
    "time": "18:30",
-   "status": "queued",
+   "status": "posted",
    "approved_by": "\"Both of those posts look good, and they're approved. Yeah. Get them scheduled and posted up.\" (Mason, marketing chat, 2026-11-25 13:46 MST) + \"Good to go.\" (Mason, phone DM to Instinct, 2026-11-26 16:16 HST, re-confirming the 8048c66 driving version for Thu 18:30; recorded on request row)",
    "hold": null,
    "buffer_post_ids": {},
@@ -105,7 +105,8 @@
    "buffer": {
     "instagram": "6b074970209be591e2df6943",
     "facebook": "6b074971b39ac731b6fc990d"
-   }
+   },
+   "posted_at": "2026-11-26 18:30 HST (Buffer: FB sent 18:30:19, IG sent 18:31:03)"
   },
   {
    "id": "w1_c03_billguess",
@@ -138,16 +139,21 @@
    "spec": "specs/week2/j04_fuel.json",
    "date": "2026-11-28",
    "time": "18:30",
-   "status": "approved",
+   "status": "queued",
    "approved_by": "Thumbs-up reaction to the pictured corrected fuel carousel ask (Mason, phone DM, 2026-11-26 18:56 MST / 15:56 HST; verified and recorded by Instinct on request row https://app.notion.com/p/42469a9b1cb981748ffdc559a81c68a4). Covers renders at ff88998, Sat Nov 28 18:30 HST, IG + FB, existing caption unchanged.",
    "hold": null,
-   "buffer_post_ids": {},
+   "buffer_post_ids": {
+    "instagram": "6b0934611fd46e62e7234edb",
+    "facebook": "6b093462e94385a8fd846f81"
+   },
    "approval_request_row": "https://app.notion.com/p/42469a9b1cb981748ffdc559a81c68a4",
    "superseded_requests": [
     "https://app.notion.com/p/42469a9b1cb98130b61bfc349dfb2f8e"
    ],
    "revision_note": "2026-11-26 09:47 HST: source correction from Instinct main applied (HPR Nov 12 2026 lag cite, ECRC wording). Re-sent for approval.",
-   "approved_commit": "ff8899857d4a2e52b0b6f7f56c5dd71bed800b46"
+   "approved_commit": "ff8899857d4a2e52b0b6f7f56c5dd71bed800b46",
+   "queued_images_commit": "e3ae118cb0a346ee81963055eb1c3ac6e7543071",
+   "queued_note": "2026-11-26 21:42 HST: final renders byte-identical to approved drafts (spec unchanged since ff88998); scheduled Sat 2026-11-28 18:30 HST, IG + FB."
   },
   {
    "id": "w2_n01_32club",
