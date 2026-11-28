@@ -113,7 +113,7 @@
    "spec": "specs/week1/c03_billguess.json",
    "date": "2026-11-27",
    "time": "11:30",
-   "status": "queued",
+   "status": "posted",
    "approved_by": "\"Both of those posts look good, and they're approved. Yeah. Get them scheduled and posted up.\" (Mason, marketing chat, 2026-11-25 13:46 MST)",
    "hold": null,
    "buffer_post_ids": {},
@@ -121,7 +121,8 @@
    "buffer": {
     "instagram": "6b0749718e7e43ca693b1854",
     "facebook": "6b0749727ef3c56ccf7a44d3"
-   }
+   },
+   "posted_at": "2026-11-27 11:30 HST (Buffer: FB sent 11:30:49, IG sent 11:31:31)"
   },
   {
    "id": "w2_j03_byodplus",
